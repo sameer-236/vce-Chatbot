@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .switch{
+           /*width:200px;
+           height: 200px;*/
+           flex-direction: row;
+           
+        }
+       
+        #yellow{
+            background-color: yellow; 
+            width:110px;
+            height: 110px;
+            gap:20px; 
+            /*text-align:center; */
+            justify-content: center;
+            color: brown;
+        }
+        #green{
+            background-color: green;
+            width:110px;
+            height: 110px;   
+        }
+        #blue{
+            background-color: blue;
+            width:110px;
+            height:110px;
+            
+        }
+        #red{
+            background-color: red;
+            width:110px;
+            height:110px;
+           
+        }
+    </style>
+
+    <h1>COLOR  SWITCHER...</h1>
+    <div class="switch">
+    <div class="div" id="yellow">yellow</div>
+    <div class="div" id="green">green</div>
+    <div class="div" id="blue">blue</div>
+    <div class="div" id="red">red</div>
+    </div>
+    <script src="sam.js">
+
+    </script>
+    
+</body>
+</html>
+
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        #div{
+            background-color: blue;
+            height: 100px;
+            width: 100px;
+        }
+        #div1{
+            background-color: darkgreen;
+            height: 100px;
+            width: 100px;
+        }
+        #div2{
+            background-color: blueviolet;
+            height: 100px;
+            width: 100px;
+        }
+    </style>
+    <ul id="pictures">
+        <li><img width="200px" id="forest" src="https://img.pikbest.com/wp/202345/wallpaper-hd-landscape-wallpapers-free-download-png_9591924.jpg!w700wp"></li>
+        <li><img width="200px" id="leaves" src="https://media.istockphoto.com/id/1457008288/photo/green-asian-tropical-leaves-in-the-park.jpg?s=1024x1024&w=is&k=20&c=pLGEsnHl1TY-PD7Y80blcEqguesUmFLODC3CwTpnL8g="> </li>
+        <li><img width="200px" id="mountain" src="https://images.pexels.com/photos/1324803/pexels-photo-1324803.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"></li>
+        <li> <a href="https://google.com">google</a> </li>
+    </ul>
+    <div id="div" height="100px" width="100px">green</div>
+    <div id="div" height="100px" width="100px">blue</div>
+    <div id="div" height="100px" width="100px">red</div>
+
+    <button id="div" >blue</button>
+    <button id="div1" >green</button>
+    <button id="div2" >violet</button>
+    
+    
+</body>
+<script>
+   /* document.getElementById("leaves").ondblclick= ()=>
+        alert("leaves  clicked.....");
+
+    document.getElementById("leaves").onclick=()=>{
+        alert("leaves clicked again");
+    }
+
+    document.getElementById("forest").addEventListener(`click`, function (){
+        alert("forest clicked");
+    });
+    document.getElementById("forest").addEventListener(`click`,function (e){
+        console.log(e);
+
+    },false);
+
+    ////  propagation event  and bubbling////
+    document.getElementById("pictures").addEventListener(`click`,function(e){
+        console.log("clicked  inside the ul......");
+
+    });
+
+
+    document.getElementById("mountain").addEventListener(`click`,function(e){
+        e.stopPropagation();           ////  stoppropagation() method stops the propagation..............//// 
+        console.log("owl  clicked....");
+    });
+    
+    document.getElementById("leaves").addEventListener(`click`,function(e){
+        console.log("leaves  clicked...");
+    });
+/////////////////  REMOVE  NODE ////////////////////////////:>
+
+document.getElementById("pictures").addEventListener(`click`,function(e){
+    console.log(e.target.tagName);
+    if(e.target.tagName==="IMG"){
+        const rem=e.target.parentNode;
+        rem.remove();
+    }
+       
+    //console.log(rem);
+
+});*/
+
+document.getElementById("div").addEventListener(`click`,function (e){
+   
+    console.log(e.target.tagName);
+    const tar=e.target.parentNode;
+    tar.remove();
+    console.log("blue");
+});
+
+document.getElementById("div").onclick(function (){
+
+});
+
+</script>
+</html>-->

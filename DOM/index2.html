@@ -1,0 +1,38 @@
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Document</title>
+</head>
+<body>
+    <ul class="unlist">
+        <li>javascript</li>
+    </ul>
+    
+</body>
+<script>
+    //  agar  hame khud se create karke li add krni  ho ......to function  ka use krkrrkr
+    function addlist(langname){
+        const li=document.createElement("li");
+        li.innerHTML=`${langname}`;
+        document.querySelector(".unlist").append(li);
+
+
+    }
+    addlist("python");
+    addlist("java");
+
+///  edit....
+const edit=document.querySelector("li:nth-child(2)")
+edit.innerHTML="c#";    
+
+const edit2=document.querySelector("li:nth-child(1)");
+edit2.innerHTML="golang";
+
+/////  FOR  REMOVE .....///
+// suppose we want to remove golang../
+const del=document.querySelector("li:first-child");
+del.remove();
+</script>
+
+</html>-->

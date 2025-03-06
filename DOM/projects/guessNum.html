@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body><div id="container">
+    <style>
+        #container {
+            width: 100vw;
+            margin: 0 auto;
+            height: 100vh;
+            background-color: lightsalmon;
+           
+        }
+    </style>
+    <button id="start">start</button>
+
+    <div id="first"
+        style="display:none">
+        <p id="para1">What is the capital of india?</p>
+        <input type="radio" name="q1" value="Delhi"> Delhi
+        <input type="radio" name="q1" value="Kolkata">Kolkata
+        <input type="radio" name="q1" value="Mumbai">Mumbai
+        <input type="radio" name="q1" value="Agra">Agra
+    </div>
+    <div id="sec"
+    style="display:none">
+    <p>What was the old capital of India?</p>
+    <input type="radio" name="q2" value="Calcutta"> Calcutta
+    <input type="radio" name="q2" value="Bombay"> Bombay
+    <input type="radio" name="q2" value="Madras"> Madras
+    <input type="radio" name="q2" value="Delhi"> Delhi
+        
+    </div>
+    <div id="third"
+    style="display:none">
+    <p>How many states are there in India?</p>
+    <input type="radio" name="q3" value="28"> 28
+    <input type="radio" name="q3" value="29"> 29
+    <input type="radio" name="q3" value="30"> 30
+    <input type="radio" name="q3" value="31"> 31
+       
+    </div>
+    <div id="forth" style="display:none">
+        <p>What is the national flower of India?</p>
+        <input type="radio" name="q4" value="Lotus"> Lotus
+        <input type="radio" name="q4" value="Rose"> Rose
+        <input type="radio" name="q4" value="Lily"> Lily
+        <input type="radio" name="q4" value="Sunflower"> Sunflower
+       
+    </div>
+    <div id="fve" style="display:none">
+        <p>What is the national language of India?</p>
+        <input type="radio" name="q5" value="Hindi"> Hindi
+        <input type="radio" name="q5" value="English"> English
+        <input type="radio" name="q5" value="Bengali"> Bengali
+        <input type="radio" name="q5" value="Tamil"> Tamil
+       
+    </div>
+    <div id="six" style="display:none">
+        <p>What is the national animal of India?</p>
+        <input type="radio" name="q6" value="Tiger"> Tiger
+        <input type="radio" name="q6" value="Lion"> Lion
+        <input type="radio" name="q6" value="Elephant"> Elephant
+        <input type="radio" name="q6" value="Leopard"> Leopard
+       
+    </div>
+    <button class="but">next</button>
+    </div>
+   
+    
+</body>
+<script>
+    const div = ["first"];
+    //let currentDiv = 0;
+    const star = document.querySelector("#start");
+
+    function click() {
+        if (currentDiv < div.length) {
+            document.getElementById(div[currentDiv]).style.display = "block";
+            //currentDiv++;
+        }
+    }
+
+    star.addEventListener("click", click);
+
+    const divs=["sec","third","forth","fve","six"];
+    let current=0;
+    const nxt=document.querySelector(".but")
+    function click(){
+        if(current < divs.length){
+            document.getElementById(divs[current]).style.display = "block";
+            current++;
+        }
+    }
+    /*nxt.addEventListener("click",click);
+
+    function checkAnswers() {
+        const answers = {
+            q2: "Calcutta",
+            q3: "28",
+            q4: "Lotus",
+            q5: "Hindi",
+            q6: "Tiger"
+        };*/
+
+       /* for (const [question, correctAnswer] of Object.entries(answers)) {
+            const selectedOption = document.querySelector(`input[name="${question}"]:checked`);
+            if (selectedOption) {
+                if (selectedOption.value === correctAnswer) {
+                    alert(`${question} is correct`);
+                } else {
+                    alert(`${question} is wrong`);
+                }
+            }
+        }
+    }*/
+    /*document.querySelector("#start").addEventListener("click", () => {
+        document.getElementById("first").style.display = "block";
+    });*/
+
+    /*document.querySelector(".but").addEventListener("click", () => {
+        if (current === divs.length) {
+            checkAnswers();
+        }
+    });*/
+    

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Chai  aur  code</h1>
+
+    <button id="start">start</button>
+    <button id="stop">stop</button>
+    
+</body>
+
+<script>
+    /*const say=function(){
+        console.log("sameer")
+    }
+    setTimeout(say, 2000);       ///  SETTIMEOUT() take handler as a argument.. handler is a callback function...
+
+    const func=function(){
+        console.log("hello")
+    }
+    setTimeout(func,4000);
+
+
+    
+
+  const h =  setTimeout(function(){
+        document.querySelector("h1").innerHTML="WELCOME........"
+
+    },3000);
+
+
+    document.querySelector("button").addEventListener("click",function(){
+        clearTimeout(h)                                                    // cleartimeout for clear settime...
+        
+    });*/
+
+///////////////////// SETINTERVAL //////////////////////////////:
+
+setInterval(function(){
+   //console.log("sameer");
+});
+
+/*function setintrvl(a,b){
+    //console.log("Sameer",a,b);
+}
+setInterval(setintrvl,3000,"parameter1","parameter2");*/
+
+document.querySelector("#start").addEventListener("click",()=>{
+    //console.log("first");
+    function setintrvl(a,b){
+    console.log("Sameer",a,b);
+}
+let clear=setInterval(setintrvl,2000,"parameter1","parameter2");
+
+document.querySelector("#stop").addEventListener("click",()=>{
+    clearInterval(clear);
+});
+
+});
+</script>
+</html>
+
+

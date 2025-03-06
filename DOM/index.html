@@ -1,0 +1,118 @@
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Document Object model</title>
+    <style>
+        .bg{
+            background-color: black;
+            color: azure;
+
+        }
+        
+    </style>
+</head>
+
+<body class="bg">
+    <div class="mydiv">
+        <h1 id="head" class="Heading">
+            Hello World
+            <span style="display: none">Chai aur code</span>
+        </h1>
+        <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis consequatur praesentium delectus autem nihil animi?</p>
+        <input type="password">
+
+        
+        <ul>
+            <li class="list-item">Chai</li>
+            <li class="list-item">aur</li>
+            <li class="list-item">code</li>
+            <li class="list-item">me</li>
+        </ul>
+    </div>
+    
+</body>
+</html>-->
+
+
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document  object model</title>
+</head>
+<body class="mybody">
+    <style>
+        .mybody{
+            background-color: black;
+            color:white;
+        }
+
+    </style>
+    <div class="parent">
+        <div class="child">Monday</div>
+        <div class="child">Tuesday</div>
+        <div class="child">Wednesday</div>
+        <div class="child">Friday</div>
+    </div>
+    
+</body>
+
+<script>
+    const par=document.querySelector(".parent");
+    console.log(par);
+    console.log(par.children);
+  //  Array.from(par);
+    console.log(par.children[0]);
+    console.log(par.children[3].innerHTML);
+
+    console.log(par.children[2]);
+
+    /*for(i=0 ; i<=par.children.length ; i++){
+        console.log(par.children[i].innerHTML);
+    }*/
+
+    par.children[1].style.color="blue";
+    //console.log(par);
+    console.log(par.firstElementChild);
+    console.log(par.lastElementChild);
+
+    const child=document.querySelector(".child");
+    console.log(child);
+
+    console.log(child.parentElement);
+
+    console.log(par.childNodes);-->
+
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Document object model</title>
+        
+    </head>
+    <body>
+        
+    </body>
+    <script>
+        //  CREATE  NODELIST //////
+        const div=document.createElement("div");
+        console.log(div);
+        div.className="mydiv";
+        div.id="myid";
+        console.log(div);
+        div.style.color="blue";
+        div.setAttribute("title","hello");
+        div.style.backgroundColor="red";
+        div.style.padding="5px";
+        div.innerText="chai aur code";
+        console.log(div);
+        
+        document.body.appendChild(div)
+        
+
+    </script>
+    </html>
+</script>
+</html>
